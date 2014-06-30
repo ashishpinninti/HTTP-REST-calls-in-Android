@@ -1,0 +1,96 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    tools:context="com.example.httpjson.MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/savebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            android:onClick="savetofile"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/readbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/savebutton"
+            android:layout_alignRight="@+id/savebutton"
+            android:layout_below="@+id/savebutton"
+            android:layout_marginTop="46dp"
+            android:onClick="readfromfile"
+            android:text="@string/read" />
+
+        <Button
+            android:id="@+id/getbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/readbutton"
+            android:layout_alignRight="@+id/readbutton"
+            android:layout_below="@+id/readbutton"
+            android:layout_marginTop="46dp"
+            android:onClick="executeGet"
+            android:text="@string/GET" />
+
+        <Button
+            android:id="@+id/postbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/getbutton"
+            android:layout_alignRight="@+id/getbutton"
+            android:layout_below="@+id/getbutton"
+            android:layout_marginTop="46dp"
+            android:onClick="executePost"
+            android:text="@string/POST" />
+
+        <Button
+            android:id="@+id/putbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/postbutton"
+            android:layout_alignRight="@+id/postbutton"
+            android:layout_below="@+id/postbutton"
+            android:layout_marginTop="46dp"
+            android:onClick="executePut"
+            android:text="@string/PUT" />
+
+        <Button
+            android:id="@+id/deletebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/putbutton"
+            android:layout_alignRight="@+id/putbutton"
+            android:layout_below="@+id/putbutton"
+            android:layout_marginTop="46dp"
+            android:onClick="executeDelete"
+            android:text="@string/DELETE" />
+
+        <!--
+   <EditText
+      android:id="@+id/editText1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/button1"
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="23dp"
+      android:ems="10"
+      android:inputType="textMultiLine" >
+
+      <requestFocus />
+   </EditText>
+        -->
+
+    </RelativeLayout>
+
+</ScrollView>
